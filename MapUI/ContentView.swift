@@ -10,8 +10,8 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-            MainView()
-   }
+        MainView()
+    }
 }
 
 struct ContentView_Previews: PreviewProvider {
@@ -22,10 +22,10 @@ struct ContentView_Previews: PreviewProvider {
 
 struct MainView: View {
     var body: some View {
-            Button(action: {
-                print("Open the side menu")
-            }) {
-                Text("Show Menu")
-            }
+        Button(action: {
+            print("Open the side menu")
+        }) {
+            Text("Show Menu")
+        }
     }
 }
