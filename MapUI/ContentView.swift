@@ -23,7 +23,8 @@ struct ContentView: View {
                 }
         }
         
-        return GeometryReader { geometry in
+        return NavigationView {
+            GeometryReader { geometry in
             ZStack(alignment: .leading) {
                 MainView(showMenu: self.$showMenu)
                 .frame(width: geometry.size.width, height: geometry.size.height)
@@ -37,6 +38,18 @@ struct ContentView: View {
                     }
             }
                 .gesture(drag)
+        }
+                .navigationBarTitle("Side Menu", displayMode: .inline)
+                .navigationBarItems(leading: (
+                    Button(action: {
+                        withAnimation {
+                            self.showMenu.toggle()
+                        }
+                    }) {
+                        Image(systemName: "line.horizontal.3")
+                            .imageScale(.large)
+                    }
+                ))
         }
     }
 }
