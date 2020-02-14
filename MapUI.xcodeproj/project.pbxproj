@@ -16,6 +16,7 @@
 		A0816A9223F528BC002992FB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A0816A9023F528BC002992FB /* LaunchScreen.storyboard */; };
 		A0816A9D23F528BD002992FB /* MapUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0816A9C23F528BD002992FB /* MapUITests.swift */; };
 		A0816AA823F528BD002992FB /* MapUIUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0816AA723F528BD002992FB /* MapUIUITests.swift */; };
+		A0F1C4EF23F6732C001AB5FF /* MenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0F1C4EE23F6732C001AB5FF /* MenuView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 		A0816AA323F528BD002992FB /* MapUIUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MapUIUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A0816AA723F528BD002992FB /* MapUIUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapUIUITests.swift; sourceTree = "<group>"; };
 		A0816AA923F528BD002992FB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A0F1C4EE23F6732C001AB5FF /* MenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,6 +106,7 @@
 				A0816A8223F528B7002992FB /* AppDelegate.swift */,
 				A0816A8423F528B7002992FB /* SceneDelegate.swift */,
 				A0816A8923F528B7002992FB /* ContentView.swift */,
+				A0F1C4EE23F6732C001AB5FF /* MenuView.swift */,
 				A0816A8B23F528BC002992FB /* Assets.xcassets */,
 				A0816A9023F528BC002992FB /* LaunchScreen.storyboard */,
 				A0816A9323F528BC002992FB /* Info.plist */,
@@ -270,6 +273,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A0F1C4EF23F6732C001AB5FF /* MenuView.swift in Sources */,
 				A0816A8323F528B7002992FB /* AppDelegate.swift in Sources */,
 				A0816A8823F528B7002992FB /* MapUI.xcdatamodeld in Sources */,
 				A0816A8A23F528B7002992FB /* ContentView.swift in Sources */,
