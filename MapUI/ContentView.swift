@@ -13,7 +13,17 @@ struct ContentView: View {
     @State var showMenu = false
     
     var body: some View {
-        GeometryReader { geometry in
+        
+        let drag = DragGesture()
+                        .onEnded{
+                if $0.translation.width < -100 {
+                    withAnimation {
+                        self.showMenu = false
+                    }
+                }
+        }
+        
+        return GeometryReader { geometry in
             ZStack(alignment: .leading) {
                 MainView(showMenu: self.$showMenu)
                 .frame(width: geometry.size.width, height: geometry.size.height)
@@ -26,6 +36,7 @@ struct ContentView: View {
                     .transition(.move(edge: .leading))
                     }
             }
+                .gesture(drag)
         }
     }
 }
