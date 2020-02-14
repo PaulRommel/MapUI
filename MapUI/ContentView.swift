@@ -10,13 +10,10 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        MainView()
-    }
-}
-
-struct ContentView_Previews: PreviewProvider {
-    static var previews: some View {
-        ContentView()
+        GeometryReader { geometry in
+            MainView()
+                .frame(width: geometry.size.width, height: geometry.size.height)
+        }
     }
 }
 
@@ -29,3 +26,11 @@ struct MainView: View {
         }
     }
 }
+
+struct ContentView_Previews: PreviewProvider {
+    static var previews: some View {
+        ContentView()
+    }
+}
+
+
